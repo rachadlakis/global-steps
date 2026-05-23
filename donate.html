@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to Global Steps — your gift funds education, sustainability, community development, and health programs in 25 countries.">
+    <meta name="theme-color" content="#0d4a3e">
+    <title>Donate — Global Steps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+        <nav class="nav" aria-label="Primary">
+            <div class="nav-brand"><a href="index.html">Global Steps</a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="btn btn-primary btn-sm is-active">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="subhero">
+            <div class="subhero-inner">
+                <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Donate</span></nav>
+                <span class="eyebrow">Make a gift</span>
+                <h1>Your support changes everything.</h1>
+                <p>87¢ of every dollar goes directly to our programs. All donations are tax-deductible in the US, UK, and EU.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="donate-grid">
+                    <form class="donate-form" novalidate>
+                        <div class="tab-group" role="tablist">
+                            <input type="radio" id="one-time" name="frequency" checked>
+                            <label for="one-time">One-time</label>
+                            <input type="radio" id="monthly" name="frequency">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" id="yearly" name="frequency">
+                            <label for="yearly">Yearly</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Choose an amount</label>
+                            <div class="amount-chips">
+                                <button type="button" class="amount-chip" data-amount="25">$25</button>
+                                <button type="button" class="amount-chip is-selected" data-amount="50">$50</button>
+                                <button type="button" class="amount-chip" data-amount="100">$100</button>
+                                <button type="button" class="amount-chip" data-amount="250">$250</button>
+                            </div>
+                            <label for="donate-amount" class="visually-hidden">Custom amount</label>
+                            <input type="number" id="donate-amount" name="amount" placeholder="Other amount" min="1" value="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donor-name">Full name</label>
+                            <input type="text" id="donor-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donor-email">Email</label>
+                            <input type="email" id="donor-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="designation">Designation (optional)</label>
+                            <input type="text" id="designation" name="designation" placeholder="e.g. Education program, where most needed">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Continue to secure checkout</button>
+                        <p style="font-size: var(--fs-xs); color: var(--color-text-subtle); margin-top: var(--sp-3); text-align: center;">You'll be redirected to our PCI-compliant payment processor.</p>
+                    </form>
+
+                    <aside class="donate-impact">
+                        <h3>Your impact</h3>
+                        <div class="impact-row"><strong>$25</strong><p>School supplies for one student for an academic year</p></div>
+                        <div class="impact-row"><strong>$50</strong><p>One month of clean water for a family of five</p></div>
+                        <div class="impact-row"><strong>$100</strong><p>Trains one community health worker</p></div>
+                        <div class="impact-row"><strong>$250</strong><p>Plants 500 trees as part of a reforestation project</p></div>
+                        <div class="impact-row"><strong>$1,000</strong><p>Funds a microenterprise grant for a women-led cooperative</p></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container" style="text-align:center;">
+                <h2>Other ways to give</h2>
+                <p style="max-width: 600px; margin: 0 auto var(--sp-6); color: var(--color-text-muted);">Stock and crypto donations, donor-advised funds, planned giving, and corporate matching.</p>
+                <a href="contact.html" class="btn btn-solid">Talk to our giving team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><h3>Global Steps</h3><p>Taking steps together for a better world.</p>
+                    <div class="social-links footer-social"><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="Twitter">Twitter</a><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div>
+                </div>
+                <div class="footer-links"><h4>Discover</h4><ul><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="stories.html">Stories</a></li><li><a href="events.html">Events</a></li><li><a href="news.html">News &amp; Press</a></li></ul></div>
+                <div class="footer-links"><h4>Take Action</h4><ul><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="partner.html">Partner With Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="annual-report.html">Annual Report</a></li></ul></div>
+                <div class="footer-links"><h4>Help</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Global Steps NGO. Registered 501(c)(3) nonprofit. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
