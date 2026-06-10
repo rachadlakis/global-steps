@@ -9,16 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="header">
         <nav class="nav" aria-label="Primary">
-            <div class="nav-brand"><a href="index.html">Global Steps</a></div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+            <div class="nav-brand"><a href="../index.html">Global Steps</a></div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+            </div>
             <ul class="nav-menu" id="primary-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html" class="is-active">About</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="impact.html">Impact</a></li>
@@ -34,7 +40,7 @@
     <main id="main">
         <section class="subhero">
             <div class="subhero-inner">
-                <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></nav>
+                <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><span>About</span></nav>
                 <span class="eyebrow">Our Story</span>
                 <h1>People helping people, one step at a time.</h1>
                 <p>Global Steps was founded on the belief that meaningful change is built locally and scaled globally — through partnership, patience, and a shared commitment to dignity.</p>
@@ -102,12 +108,13 @@
             <div class="container">
                 <h2>Leadership Team</h2>
                 <div class="team-grid">
-                    <div class="team-card"><div class="team-avatar">AM</div><h4>Amara Mensah</h4><p class="role">Executive Director</p></div>
-                    <div class="team-card"><div class="team-avatar">JR</div><h4>Javier Rivera</h4><p class="role">Director of Programs</p></div>
-                    <div class="team-card"><div class="team-avatar">PK</div><h4>Priya Kapoor</h4><p class="role">Head of Partnerships</p></div>
-                    <div class="team-card"><div class="team-avatar">TO</div><h4>Tomás Oliveira</h4><p class="role">CFO</p></div>
-                    <div class="team-card"><div class="team-avatar">LN</div><h4>Lara N'Diaye</h4><p class="role">Director of Impact</p></div>
-                    <div class="team-card"><div class="team-avatar">SK</div><h4>Sun-hee Kim</h4><p class="role">Communications Lead</p></div>
+                    <div class="team-card"><img class="team-avatar" src="../images/team/ahmad-allaw.jpg" alt="Ahmad Allaw"><h4>Ahmad Allaw</h4><p class="role">Chief Executive Officer</p></div>
+                    <div class="team-card"><div class="team-avatar">KN</div><h4>Karim Nasser</h4><p class="role">Executive Director</p></div>
+                    <div class="team-card"><div class="team-avatar">YH</div><h4>Youssef Hamdan</h4><p class="role">Director of Programs</p></div>
+                    <div class="team-card"><div class="team-avatar">LS</div><h4>Layla Sabbagh</h4><p class="role">Head of Partnerships</p></div>
+                    <div class="team-card"><div class="team-avatar">OD</div><h4>Omar Darwish</h4><p class="role">CFO</p></div>
+                    <div class="team-card"><div class="team-avatar">RK</div><h4>Rania Khalil</h4><p class="role">Director of Impact</p></div>
+                    <div class="team-card"><img class="team-avatar" src="../images/team/zakia-krunfol.jpg" alt="Zakia Krunfol"><h4>Zakia Krunfol</h4><p class="role">Communications Officer</p></div>
                 </div>
                 <p style="text-align: center; margin-top: var(--sp-7);"><a href="careers.html" class="link-arrow">Join our team &rarr;</a></p>
             </div>
@@ -142,6 +149,6 @@
         </div>
     </footer>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="script.js"></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>

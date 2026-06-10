@@ -6,10 +6,28 @@
     <meta name="description" content="Global Steps NGO — Taking steps together for a better world. Education, sustainability, community development, and health.">
     <meta name="theme-color" content="#0d4a3e">
     <title>Global Steps — A Better World, One Step at a Time</title>
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Global Steps — A Better World, One Step at a Time">
+    <meta property="og:description" content="We work alongside local communities in 25 countries to advance education, sustainability, health, and economic opportunity.">
+    <meta property="og:site_name" content="Global Steps">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Steps — A Better World, One Step at a Time">
+    <meta name="twitter:description" content="We work alongside local communities in 25 countries to advance education, sustainability, health, and economic opportunity.">
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -19,19 +37,37 @@
             <div class="nav-brand">
                 <a href="index.html">Global Steps</a>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
             <ul class="nav-menu" id="primary-menu">
                 <li><a href="index.html" class="is-active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="impact.html">Impact</a></li>
-                <li><a href="stories.html">Stories</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="donate.html" class="btn btn-primary btn-sm">Donate</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/programs.html">Programs</a></li>
+                <li><a href="pages/impact.html">Impact</a></li>
+                <li><a href="pages/stories.html">Stories</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/get-involved.html">Get Involved</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/donate.html" class="btn btn-primary btn-sm">Donate</a></li>
             </ul>
         </nav>
     </header>
@@ -43,8 +79,8 @@
                 <h1>Taking Steps Together<br>for a Better World</h1>
                 <p>We work alongside local communities in 25 countries to advance education, sustainability, health, and economic opportunity.</p>
                 <div class="hero-buttons">
-                    <a href="donate.html" class="btn btn-primary">Donate Today</a>
-                    <a href="about.html" class="btn btn-secondary">Our Story</a>
+                    <a href="pages/donate.html" class="btn btn-primary">Donate Today</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Our Story</a>
                 </div>
                 <div class="hero-meta">
                     <div><strong>50+</strong><span>Communities</span></div>
@@ -65,7 +101,7 @@
                         <p>To empower communities through education, sustainable development, and collaborative action.</p>
                         <h3>Our Vision</h3>
                         <p>A world where every community has the resources and support to thrive.</p>
-                        <p><a href="about.html" class="link-arrow">Learn more about us &rarr;</a></p>
+                        <p><a href="pages/about.html" class="link-arrow">Learn more about us &rarr;</a></p>
                     </div>
                 </div>
             </div>
@@ -75,22 +111,22 @@
             <div class="container">
                 <h2>Our Programs</h2>
                 <div class="programs-grid">
-                    <a href="programs.html#education" class="program-card">
+                    <a href="pages/programs.html#education" class="program-card">
                         <div class="program-icon">&#127891;</div>
                         <h3>Education</h3>
                         <p>Providing access to quality education and learning resources for underserved communities.</p>
                     </a>
-                    <a href="programs.html#sustainability" class="program-card">
+                    <a href="pages/programs.html#sustainability" class="program-card">
                         <div class="program-icon">&#127793;</div>
                         <h3>Sustainability</h3>
                         <p>Implementing eco-friendly initiatives and promoting environmental awareness.</p>
                     </a>
-                    <a href="programs.html#community" class="program-card">
+                    <a href="pages/programs.html#community" class="program-card">
                         <div class="program-icon">&#129309;</div>
                         <h3>Community Development</h3>
                         <p>Building infrastructure and supporting local economies for long-term growth.</p>
                     </a>
-                    <a href="programs.html#health" class="program-card">
+                    <a href="pages/programs.html#health" class="program-card">
                         <div class="program-icon">&#128156;</div>
                         <h3>Health &amp; Wellness</h3>
                         <p>Improving access to healthcare and promoting healthy living practices.</p>
@@ -120,7 +156,7 @@
                         <div class="stat-label">Volunteers</div>
                     </div>
                 </div>
-                <p style="text-align:center; margin-top: 2.5rem;"><a href="impact.html" class="link-arrow">See our 2025 Annual Report &rarr;</a></p>
+                <p style="text-align:center; margin-top: 2.5rem;"><a href="pages/impact.html" class="link-arrow">See our 2025 Annual Report &rarr;</a></p>
             </div>
         </section>
 
@@ -131,17 +167,17 @@
                     <div class="involvement-card">
                         <h3>Volunteer</h3>
                         <p>Join our global network of volunteers making a difference in communities worldwide.</p>
-                        <a href="volunteer.html" class="btn btn-solid">Apply Now</a>
+                        <a href="pages/volunteer.html" class="btn btn-solid">Apply Now</a>
                     </div>
                     <div class="involvement-card">
                         <h3>Donate</h3>
                         <p>Your contribution helps us continue our mission and expand our reach.</p>
-                        <a href="donate.html" class="btn btn-solid">Donate</a>
+                        <a href="pages/donate.html" class="btn btn-solid">Donate</a>
                     </div>
                     <div class="involvement-card">
                         <h3>Partner</h3>
                         <p>Collaborate with us to create larger-scale impact through strategic partnerships.</p>
-                        <a href="partner.html" class="btn btn-solid">Partner With Us</a>
+                        <a href="pages/partner.html" class="btn btn-solid">Partner With Us</a>
                     </div>
                 </div>
             </div>
@@ -178,31 +214,31 @@
                 <div class="footer-links">
                     <h4>Discover</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="impact.html">Impact</a></li>
-                        <li><a href="stories.html">Stories</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="news.html">News &amp; Press</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/programs.html">Programs</a></li>
+                        <li><a href="pages/impact.html">Impact</a></li>
+                        <li><a href="pages/stories.html">Stories</a></li>
+                        <li><a href="pages/events.html">Events</a></li>
+                        <li><a href="pages/news.html">News &amp; Press</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Take Action</h4>
                     <ul>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="partner.html">Partner With Us</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="annual-report.html">Annual Report</a></li>
+                        <li><a href="pages/volunteer.html">Volunteer</a></li>
+                        <li><a href="pages/donate.html">Donate</a></li>
+                        <li><a href="pages/partner.html">Partner With Us</a></li>
+                        <li><a href="pages/careers.html">Careers</a></li>
+                        <li><a href="pages/annual-report.html">Annual Report</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Help</h4>
                     <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Use</a></li>
                     </ul>
                 </div>
             </div>
@@ -214,6 +250,30 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="script.js"></script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Global Steps",
+        "description": "Taking steps together for a better world. We work alongside local communities in 25 countries to advance education, sustainability, health, and economic opportunity.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua das Janelas Verdes",
+            "addressLocality": "Lisboa",
+            "postalCode": "1200-690",
+            "addressCountry": "PT"
+        },
+        "email": "info@globalsteps.ngo",
+        "sameAs": [
+            "https://facebook.com/globalsteps",
+            "https://twitter.com/globalsteps",
+            "https://instagram.com/globalsteps",
+            "https://linkedin.com/company/globalsteps"
+        ]
+    }
+    </script>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>
