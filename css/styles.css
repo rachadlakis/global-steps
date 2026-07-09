@@ -775,7 +775,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: var(--sp-7);
     margin-bottom: var(--sp-7);
 }

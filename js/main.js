@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!btn || !answer) return;
 
         // Set up ARIA
-        const answerId = 'faq-answer-' + Math.random().toString(36).substr(2, 9);
+        const answerId = 'faq-answer-' + Math.random().toString(36).substring(2, 11);
         answer.id = answerId;
         btn.setAttribute('aria-controls', answerId);
 
@@ -352,8 +352,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ---------- Counter animation for stats ---------- */
     function animateCounter(element, target, duration = 2000) {
+        // Check if the original text had a "+" suffix
+        const hadPlusSuffix = element.dataset.suffix === '+' || element.textContent.includes('+');
+        const suffix = hadPlusSuffix ? '+' : '';
+
         if (prefersReducedMotion) {
-            element.textContent = target.toLocaleString() + (target > 100 ? '+' : '');
+            element.textContent = target.toLocaleString() + suffix;
             return;
         }
 
@@ -368,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const eased = 1 - Math.pow(1 - progress, 3);
             const current = Math.floor(start + (target - start) * eased);
 
-            element.textContent = current.toLocaleString() + (target > 100 ? '+' : '');
+            element.textContent = current.toLocaleString() + suffix;
 
             if (progress < 1) {
                 requestAnimationFrame(update);
